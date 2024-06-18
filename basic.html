@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draw Yourself</title>
+  <link rel="icon" href="images/Logo-black-square.png"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    ntegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style-menu.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+  
+      <!-- 네비게이션 시작 -->
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        </div>
+  
+        <nav class="navbar sticky-top bg-dark border-bottom border-body" data-bs-theme="dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Category</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active mb-3" style="font-size: 1.5rem;" aria-current="page" href="index.html">About</a>
+                  </li>         
+                  <li class="nav-item">
+                    <a class="nav-link active mb-3" style="font-size: 1.2rem;" aria-current="page" href="main.html">Home</a>
+                  </li>
+                  <hr>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="medium.html">Medium</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="high.html">High</a>
+                  </li>
+                  <hr>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="mypage.html">MyPage</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="FAQ.html">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            
+            <a class="navbar-brand m-auto" href="main.html" style="font-family:Nanum Pen Script; font-size: 30px;"><img src="images/Logo-white-square.png" style="width: 50px; height: 50px;">Draw Yourself</a>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe2"></i> 언어
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="basic.html">한국어</a></li>
+                <li><a class="dropdown-item" href="en/basic-en.html">영어</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- 네비게이션 끝 -->
+
+  <!-- 헤더 시작 -->
+  <header id="home" class="py-5 d-flex flex-column justify-content-center align-items-center text-white">
+
+      <p style="font-size: 50px; color: rgba(255, 255, 255, 0.825); font-family: 'Jua',sans-serif;">초급 단계</p>
+
+  </header>
+  <!-- 헤더 끝 -->
+  
+<!-- 메뉴 섹션 시작 -->
+<section class="bg-dark py-5" id="menu">
+
+    <div class="container overflow-hidden"> 
+        <div class="text-center text-white py-5">
+            <h2 class="fw-bold mb-3">선 긋기</h2>
+            <p>연습하고 싶은 분야를 선택하세요.</p>
+        </div>
+
+        <!-- 선 긋기 컨테이너의 이미지 출처는 다음과 같습니다. : https://ch.yes24.com/Article/View/13483 -->
+        <div class="row pb-5 g-4">
+            <div class="col-sm-12 col-lg-4" id="album">
+                <img src="images/basic/line.jpg" alt="직선썸네일" class="img img-fluid img-thumbnail">
+                <p class="overlay" data-bs-toggle="modal" data-bs-target="#line1">직선</p>
+
+                <!-- Modal -->
+                  <div class="modal fade" id="line1" tabindex="-1" aria-labelledby="line1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="line1Label">직선 그리기</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="carouselExampleCaptions1" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="images/basic/line2.jpg" class="d-block w-100" alt="직선1">
+                                <div class="carousel-caption d-none d-md-block text-black">
+                                  <h5>직선을 그어봅시다</h5>
+                                  <p>자를 사용하지 않고 직선을 그리는 연습을 해보세요</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/basic/lines1.jpg" class="d-block w-100" alt="직선2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/basic/lines2.jpg" class="d-block w-100" alt="직선3">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/basic/lines3.jpg" class="d-block w-100" alt="직선4">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-4" id="album">
+                <img src="images/basic/curve.jpg" alt="곡선썸네일" class="img img-fluid img-thumbnail">
+                <p class="overlay" data-bs-toggle="modal" data-bs-target="#line2">곡선</p>
+
+                <!-- Modal -->
+                  <div class="modal fade" id="line2" tabindex="-1" aria-labelledby="line2Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="line2Label">곡선 그리기</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="carouselExampleCaptions2" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="images/basic/line2.jpg" class="d-block w-100" alt="곡선1">
+                                <div class="carousel-caption d-none d-md-block text-black">
+                                  <h5>곡선을 그어봅시다</h5>
+                                  <p>일정한 간격을 두고 한 번에 곡선을 그려보세요</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/basic/curve2.jpg" class="d-block w-100" alt="곡선2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/basic/curve3.jpg" class="d-block w-100" alt="곡선3">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/basic/curve4.jpg" class="d-block w-100" alt="곡선4">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-4" id="album">
+                <img src="images/basic/circle.jpg" alt="선 응용" class="img img-fluid img-thumbnail">
+                <p class="overlay" data-bs-toggle="modal" data-bs-target="#line3">선 응용</p>
+
+                <!-- Modal -->
+                  <div class="modal fade" id="line3" tabindex="-1" aria-labelledby="line3Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="line3Label">선 그리기 응용</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="carouselExampleCaptions3" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="images/basic/shape.jpg" class="d-block w-100" alt="선 응용1">
+                                <div class="carousel-caption d-none d-md-block text-black">
+                                  <h5>선 그리기 응용</h5>
+                                  <p>앞선 연습을 바탕으로 응용해보세요</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/basic/lines4.jpg" class="d-block w-100" alt="선 응용2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/basic/lines5.jpg" class="d-block w-100" alt="선 응용3">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="text-center text-white py-5">
+            <h2 class="fw-bold mb-3">기본 도형</h2>
+            <p>연습하고 싶은 분야를 선택하세요.</p>
+        </div>
+
+        <div class="row pb-5 g-4">
+          <div class="col-sm-12 col-lg-4" id="album">
+              <img src="images/basic/plane figure.jpg" alt="도형1썸네일" class="img img-fluid img-thumbnail">
+              <!-- 이미지 출처: https://apmkcrw.tistory.com/entry/%ED%8F%89%EB%A9%B4%EB%8F%84%ED%98%95-%EA%B7%B8%EB%A6%AC%EA%B8%B0-Drawing-plan-figure -->
+              <p class="overlay" data-bs-toggle="modal" data-bs-target="#shape1">평면 도형</p>
+
+              <!-- Modal -->
+                <div class="modal fade" id="shape1" tabindex="-1" aria-labelledby="shape1Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="shape1Label">평면 도형 그리기</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="carouselExampleCaptions4" class="carousel carousel-dark slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="images/basic/plane figure2.jpg" class="d-block w-100" alt="평면도형1">
+                              <div class="carousel-caption d-none d-md-block text-black">
+                                <h5>평면 도형을 그려봅시다</h5>
+                                <p>여러 모양의 도형의 구조를 익혀보세요</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/basic/plane figure3.jpg" class="d-block w-100" alt="평면도형2">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/basic/plane figure4.jpg" class="d-block w-100" alt="평면도형3">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/basic/plane figure5.jpg" class="d-block w-100" alt="평면도형4">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4" id="album">
+              <img src="images/basic/solid figure.jpg" alt="도형2썸네일" class="img img-fluid img-thumbnail">
+              <!-- 이미지 출처: https://blog.naver.com/ohsoohang/221526973659 -->
+              <p class="overlay" data-bs-toggle="modal" data-bs-target="#shape2">입체 도형</p>
+
+              <!-- Modal -->
+                <div class="modal fade" id="shape2" tabindex="-1" aria-labelledby="shape2Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="shape2Label">입체 도형 그리기</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="carouselExampleCaptions5" class="carousel carousel-dark slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="images/basic/solid figure2.jpg" class="d-block w-100" alt="입체도형1">
+                              <!-- 이미지 출처: https://pin.it/ca2MgHvJc -->
+                              <div class="carousel-caption d-none d-md-block text-black">
+                                <h5>입체도형을 그려봅시다</h5>
+                                <p>입체적인 도형의 구조를 익혀보세요</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/basic/solid figure3.jpg" class="d-block w-100" alt="입체도형2">
+                              <!-- 이미지 출처: https://onlineresize.club/2021-club.html -->
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/basic/solid figure4.jpg" class="d-block w-100" alt="입체도형3">
+                              <!-- 이미지 출처: https://onlineresize.club/2021-club.html -->
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4" id="album">
+              <img src="images/basic/shape pic.jpg" alt="도형 응용" class="img img-fluid img-thumbnail">
+              <!-- 도형 응용 컨테이너의 이미지 출처: https://line-of-action.com/ -->
+              <p class="overlay" data-bs-toggle="modal" data-bs-target="#shape3">도형 응용</p>
+
+              <!-- Modal -->
+                <div class="modal fade" id="shape3" tabindex="-1" aria-labelledby="shape3Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="shape3Label">도형 그리기 응용</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="carouselExampleCaptions6" class="carousel carousel-dark slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="images/basic/shape pic2.jpg" class="d-block w-100" alt="도형 응용1">
+                              <div class="carousel-caption d-none d-md-block text-black">
+                                <h5>도형 그리기 응용</h5>
+                                <p>실제 도형 사진을 보고 따라 그려보세요</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/basic/shape pic3.jpg" class="d-block w-100" alt="도형 응용2">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/basic/shape pic4.jpg" class="d-block w-100" alt="도형 응용3">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/basic/shape pic5.jpg" class="d-block w-100" alt="도형 응용4">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+    </div>
+</section>
+<!-- 메뉴 섹션 끝 -->
+   
+
+  <!-- 풋터 시작 -->
+  <footer class="bg-dark text-white py-4 mb-0">
+    <div class="container text-center">
+      <p >Copyright <i class="bi bi-c-circle"></i> 2024 Designed by 민서연</p>
+      <p>
+        <i class="bi bi-telephone-fill" style="font-style: normal;"> 010-XXXX-XXXX</i>
+      </p>
+      <p>  
+      <i class="bi bi-envelope-fill" style="font-style: normal;"> minsy@swu.ac.kr</i>
+      </p>
+    </div>
+  </footer>
+  <!-- 풋터 끝 -->
+  
+<!-- TOP 이동 버튼 시작 -->
+<span id="top-link-block" class="fixed-bottom text-end m-5">
+  <a href="#top" class="topbtn btn rounded-pill btn-dark">
+      <i class="bi bi-arrow-up-circle" style="font-size: 2rem; font-style:bold;"></i>
+  </a>
+</span>
+<!-- TOP 이동 버튼 끝 -->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draw Yourself</title>
+  <link rel="icon" href="images/Logo-black-square.png"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    ntegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style-menu.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+  
+      <!-- 네비게이션 시작 -->
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        </div>
+  
+        <nav class="navbar sticky-top bg-dark border-bottom border-body" data-bs-theme="dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Category</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active mb-3" style="font-size: 1.5rem;" aria-current="page" href="index.html">About</a>
+                  </li>         
+                  <li class="nav-item">
+                    <a class="nav-link active mb-3" style="font-size: 1.2rem;" aria-current="page" href="main.html">Home</a>
+                  </li>
+                  <hr>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="medium.html">Medium</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="high.html">High</a>
+                  </li>
+                  <hr>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="mypage.html">MyPage</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="FAQ.html">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            
+            <a class="navbar-brand m-auto" href="main.html" style="font-family:Nanum Pen Script; font-size: 30px;"><img src="images/Logo-white-square.png" style="width: 50px; height: 50px;">Draw Yourself</a>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe2"></i> 언어
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="FAQ.html">한국어</a></li>
+                <li><a class="dropdown-item" href="en/FAQ-en.html">영어</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- 네비게이션 끝 -->
+
+  <!-- 헤더 시작 -->
+  <header id="home" class="py-5 d-flex flex-column justify-content-center align-items-center text-white" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/FAQ.jpg);">
+
+      <p style="font-size: 50px; color: rgb(255, 255, 255); font-family:Nanum Pen Script; font-size: 100px;">Draw Yourself</p>
+
+  </header>
+  <!-- 헤더 끝 -->
+  
+<!-- FAQ 섹션 시작 -->
+<section class="py-5" id="FAQ;">
+
+    <div class="container overflow-hidden py-5">
+        <div class="text-center py-5">
+            <h2 class="fw-bold mb-3">자주 묻는 질문(FAQ)</h2>
+        </div>
+
+        <div class="accordion" id="accordionFAQ">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Q. 이 사이트는 왜 만들어졌나요?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                <strong>가장 중요하게 생각하는 것은 누구나 쉽게 그림을 그릴 수 있도록 돕는 것입니다.</strong>
+                단계별 추천을 통해서 자신에게 맞는 자료를 가지고 차근차근 그림을 연습하다보면 그저 상상만 했던 것들을 직접 표현할 수 있게 될 것입니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Q. 그림 그릴 때 추천 준비물이 꼭 필요할까요?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                <strong>결론부터 말하자면 필요하지 않습니다.</strong>
+                무엇이든 그림을 그릴 수 있다면 흙바닥과 나뭇가지라도 생각을 표현할 수 있습니다. 내가 편한 재료를 가지고 그림을 그려 보세요
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Q. 그림 자료 및 사이트 내의 이미지들의 저작권은 괜찮은가요?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                기본적으로 'pixabay' 사이트에서 제공하고 있는 무료 이미지를 사용하고 있습니다. 또한 사이트 소개란의 아이콘은 각 링크 사이트에서 가져왔으며, 기타 출처 표기가 필요한 이미지들은 html코드의 주석으로 달아주었습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Q. 중급, 고급 단계의 자료들이 "준비중입니다." 라는 메세지가 뜹니다.
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                <strong>정상입니다.</strong>
+                적합한 자료를 찾지 못하여 기능은 초급 단계를 위주로 구성하였으며, 추후 업데이트 고려 중에 있습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Q. 기타 문의사항은 어디로 보내면 되나요?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                <strong>사이트 하단에 있는 이메일 주소로 보내주시면 됩니다.</strong> 
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ 섹션 끝 -->
+   
+
+  <!-- 풋터 시작 -->
+  <footer class="bg-dark text-white py-4 mb-0">
+    <div class="container text-center">
+      <p >Copyright <i class="bi bi-c-circle"></i> 2024 Designed by 민서연</p>
+      <p>
+        <i class="bi bi-telephone-fill" style="font-style: normal;"> 010-XXXX-XXXX</i>
+      </p>
+      <p>  
+      <i class="bi bi-envelope-fill" style="font-style: normal;"> minsy@swu.ac.kr</i>
+      </p>
+    </div>
+  </footer>
+  <!-- 풋터 끝 -->
+  
+<!-- TOP 이동 버튼 시작 -->
+<span id="top-link-block" class="fixed-bottom text-end m-5">
+  <a href="#top" class="topbtn btn rounded-pill btn-dark">
+      <i class="bi bi-arrow-up-circle" style="font-size: 2rem; font-style:bold;"></i>
+  </a>
+</span>
+<!-- TOP 이동 버튼 끝 -->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

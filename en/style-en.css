@@ -1,0 +1,52 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(images/main1.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#home {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 150px;
+}
+
+#main-head{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/watercolor-paint.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: scroll;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 50px;
+    text-shadow:1px 1px 10px #000000;
+}
+
+/* 추천 사이트 영역 */
+#recommend-site {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    font-family: 'Jua', cursive;
+}
+
+#recommend-site-btn{
+    top:50%;
+    background-color:#ffffff;
+    border-width: 5px;
+    border-color: #1AA6FB;
+}
+#recommend-site-btn:hover{
+    top:50%;
+    background-color:#b9b9b9;
+}
+
+#about {
+    font-family: 'Jua', cursive;
+}
+
+#step{
+    font-family: 'Noto Sans KR', sans-serif;
+}
